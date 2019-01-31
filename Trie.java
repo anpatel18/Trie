@@ -1,7 +1,12 @@
 package trie;
 
 import java.util.ArrayList;
-
+/**
+ * This class implements a Trie. 
+ * 
+ * @author Sesh Venugopal
+ *
+ */
 public class Trie {
 	
 	// prevent instantiation
@@ -57,7 +62,7 @@ public class Trie {
 					System.out.println("tempptr -> " + tempptr.sibling);
 					tempprev = prev;
 					System.out.println("tempprev -> " + tempprev.sibling);
-					//if(counter != -1) {
+					
 					prefix.startIndex = ptr.substr.startIndex;
 					System.out.println("start index -> " + prefix.startIndex);
 					System.out.println("this shouldnt change -> " + ptr.sibling);
@@ -68,7 +73,7 @@ public class Trie {
 					System.out.println("this shouldnt change -> " + ptr.sibling);
 					System.out.println("word index ->" + prefix.wordIndex);
 					substring.startIndex = (short) (prefix.endIndex + 1);
-					//}
+	
 					prev = ptr;
 					ptr = ptr.firstChild;
 					counter = -1;
