@@ -2,12 +2,6 @@ package trie;
 
 import java.util.ArrayList;
 
-/**
- * This class implements a Trie. 
- * 
- * @author Sesh Venugopal
- *
- */
 public class Trie {
 	
 	// prevent instantiation
@@ -22,7 +16,7 @@ public class Trie {
 	 * @return Root of trie with all words inserted from the input array
 	 */
 	public static TrieNode buildTrie(String[] allWords) {
-		/** COMPLETE THIS METHOD **/
+		
 		TrieNode root = new TrieNode (null,null,null);
 		
 		
@@ -122,8 +116,7 @@ public class Trie {
 					}System.out.println("----------");
 				}
 		}
-		// FOLLOWING LINE IS A PLACEHOLDER TO ENSURE COMPILATION
-		// MODIFY IT AS NEEDED FOR YOUR IMPLEMENTATION
+		
 		return root;
 	}
 	
@@ -147,7 +140,7 @@ public class Trie {
 	 */
 	public static ArrayList<TrieNode> completionList(TrieNode root,
 										String[] allWords, String prefix) {
-		/** COMPLETE THIS METHOD **/
+		
 		ArrayList<TrieNode> result = new ArrayList<TrieNode>();
 		ArrayList<TrieNode> temp = new ArrayList<TrieNode>();
 		TrieNode prev = null;
@@ -219,8 +212,7 @@ public class Trie {
 				}
 			}
 		}
-		// FOLLOWING LINE IS A PLACEHOLDER TO ENSURE COMPILATION
-		// MODIFY IT AS NEEDED FOR YOUR IMPLEMENTATION
+		
 		if(result.isEmpty()) {
 			return null;
 		} else {
